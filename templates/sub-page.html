@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Sub-Page</title>
+    <style>
+        body {
+<!--            font-family: Arial, sans-serif;-->
+            background-color: #ffffff;
+            color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .content {
+            max-width: 600px;
+<!--            text-align: center;-->
+        }
+        a {
+            margin-top: 20px;
+            color: #0000ee;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <a href="{% url 'home' %}">Home</a>
+        <h1>Other Sub-Page</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel urna at odio commodo venenatis.
+            Cras auctor mi nec justo pharetra, vel elementum nisi vestibulum. Pellentesque habitant morbi tristique
+            senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. Duis dignissim turpis ac ligula
+            facilisis, non bibendum metus scelerisque. Ut varius, nulla et ultricies pulvinar, dui nunc facilisis nisi,
+            eget luctus felis libero in est. Vivamus ullamcorper quam sed nisl vestibulum, at varius mi pulvinar.
+        </p>
+    </div>
+</body>
+</html>
