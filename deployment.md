@@ -29,10 +29,15 @@ When you use `DEBUG=False` in `.env` file, db changes to `POSTGRESQL`, and this 
 ## Deploy
 To Deploy check this:
 `https://fly.io/docs/django/getting-started/`
-I used this document to deploy:
+I used this document to install flyctl and deploy:
 `https://fly.io/django/`
-1. install flyctl on mac os
+0. install flyctl on mac os
    1. brew install flyctl
-2. run from project root
-   1. fly launch
-3. 
+1. pull the repository I made
+2. in the root, run fly launch
+3. when it asks "Do you want to tweak these settings before proceeding?" please enter y
+4. in the opened browser tab, select damc organisation
+5. in app name enter "refapp"
+6. in postgres section choose the option "fly automated postgres"
+7. and then when fly launch process completed, run "fly deploy"
+
