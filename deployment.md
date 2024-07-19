@@ -27,9 +27,12 @@ Before enabling HSTS, ensure that your entire site and all subdomains support HT
 When you use `DEBUG=False` in `.env` file, db changes to `POSTGRESQL`, and this needs `psycopg2` to be installed. I added it to `requirements.txt` file.
 
 ## Deploy
+To Deploy check this:
+`https://fly.io/docs/django/getting-started/`
 I used this document to deploy:
 `https://fly.io/django/`
 1. install flyctl on mac os
    1. brew install flyctl
 2. run from project root
    1. fly launch
+3. 

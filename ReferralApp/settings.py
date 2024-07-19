@@ -32,7 +32,8 @@ if not DEBUG:
     # Add the preload directive for HSTS (optional but recommended)
     SECURE_HSTS_PRELOAD = True
 
-ALLOWED_HOSTS = ["*"]
+APP_NAME = os.environ.get("FLY_APP_NAME")
+ALLOWED_HOSTS = [f"{APP_NAME}.fly.dev"]
 
 
 INSTALLED_APPS = [
